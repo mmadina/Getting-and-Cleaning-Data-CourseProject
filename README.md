@@ -24,11 +24,11 @@ This Repository contains the files related to the Coursera's Project of Coursera
 
 * From the raw data files following steps have to be performed 
 
-* 1.) Merges the training and the test sets to create one data set.
-* 2.) Extracts only the measurements on the mean and standard deviation for each measurement. 
-* 3.) Uses descriptive activity names to name the activities in the data set
-* 4.) Appropriately labels the data set with descriptive variable names. 
-* 5.) Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+   1.) Merges the training and the test sets to create one data set.
+   2.) Extracts only the measurements on the mean and standard deviation for each measurement. 
+   3.) Uses descriptive activity names to name the activities in the data set
+   4.) Appropriately labels the data set with descriptive variable names. 
+   5.) Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
 ## Summary of steps Performed
@@ -59,9 +59,8 @@ This Repository contains the files related to the Coursera's Project of Coursera
 * Pipe delimited file with the name "TidyData.csv" will be created in the directory which was passed to the function 
 
 ##Conclusion
-* 
 * This script can be run by peer reviwer by downloading and sourcing it in R and using the above steps mentioned 
-* If you sucessfully execute the script there will be CSV file created as well there will 6 records which will be displayed on the Prompt, the Variable names are very descriptive and gives understanding. 
+* If you sucessfully execute the script there will be CSV file created as well there will 6 records which will be displayed on the Prompt, the Variable names have been named very descriptive for clear understanding. 
 
 
 
