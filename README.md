@@ -60,7 +60,7 @@ This Repository contains the files related to the Coursera's Project of Coursera
 
 ##Conclusion
 * This script can be run by peer reviwer by downloading and sourcing it in R and using the above steps mentioned 
-* If you sucessfully execute the script there will be CSV file created as well there will 6 records which will be displayed on the Prompt, the Variable names have been named very descriptive for clear understanding. 
+* If you sucessfully execute the script there will be CSV file created in the directory which was passed to the script as   well there will 6 records which will be displayed on the R Prompt, the Variable names have been named very descriptive    for clear understanding. 
 
 
 
