@@ -1,16 +1,18 @@
 run_anlysis <- function(directory) 
 
 {
-  ##You should create one R script called run_analysis.R that does the following. 
+ 
 
-##Merges the training and the test sets to create one data set.
+ ##Read the directory name into directory vector
 
+  
   directory <- as.character(directory)
 
+##set the directory as working directory
 ##setwd("C:/Users/madinam/Documents/Coursera/R-Datafiles")  
   setwd(directory)
 
-# Create Column Names Vector
+## Create Column Names Vector from directory
   
   Datacolnames <- read.table("features.txt")
 
@@ -18,12 +20,10 @@ run_anlysis <- function(directory)
 
   colnamevect <- Datacolnames
 
+## Create Column Names Vector 
   colnamevect <- as.vector(colnamevect)
 
-
-##print('1')
-
-## Read Train data (Count # 7352)
+## Read Train data and Assign the column names (Count # 7352)
 
 
 subject_train <- read.csv ("subject_train.txt",header=F, sep="", comment.char = "",colClasses="numeric");
@@ -38,31 +38,30 @@ colnames(x_train) <- colnamevect
 
 traindata <- cbind(subject_train,y_train,x_train)
 
-# Read Test Data (Count # 2947)
-##print('2')
+# Read Test Data and assign the column names (Count # 2947)
+
 subject_test <- read.csv ("subject_test.txt",header=F, sep="", comment.char = "",colClasses="numeric");
 colnames(subject_test) <- "Subject_Id"
 
 y_test  <- read.csv ("y_test.txt",header=F, sep="", comment.char = "",colClasses="numeric");
 colnames(y_test) <- "Activity_Id"
 
-##print('3')
+
 x_test <- read.csv ("X_test.txt",header=F, sep="", comment.char = "",colClasses="numeric");
 colnames(x_test) <- colnamevect 
-##print('4')
+
 testdata <- cbind(subject_test,y_test,x_test)
 
 
-## Merges the training(x_train) and the test(x_test) sets to create one data set.
-## Number of rows (10,299)
-##print('5')
+## Merges the train and the test(x_test) sets to create one data set.
+## Number of obeservations (10,299)
+
 meregedata <-  rbind(traindata,testdata)
 
-## For Excat Match on mean columns
+## Exact match on mean and std dev columns
 meandata<- meregedata[,grepl('std()|mean\\(\\)|Activity_Id|Subject_Id', names(meregedata))]
 
 ##Uses descriptive activity names to name the activities in the data set
-
 ## Read activty_lables file to a dataframe
 
 activity_labels <- read.table("activity_labels.txt")
@@ -76,24 +75,12 @@ for(i in 1:length(activity_labels$Activity_Id))
   meandata$Activity_Id[meandata$Activity_Id==i] <- as.character(activity_labels[activity_labels$Activity_Id==i,c("activity_name")])
 }
 
-##meandata$Activity_Id[meandata$Activity_Id==1] <- "WALKING"
-
-#meandata$Activity_Id[meandata$Activity_Id==2] <- "WALKING_UPSTAIRS"
-
-#meandata$Activity_Id[meandata$Activity_Id==3] <- "WALKING_DOWNSTAIRS"
-
-#meandata$Activity_Id[meandata$Activity_Id==4] <- "SITTING"
-
-#meandata$Activity_Id[meandata$Activity_Id==5] <- "STANDING"
-
-#meandata$Activity_Id[meandata$Activity_Id==6] <- "LAYING"
-
 
 ##Appropriately labels the data set with descriptive variable names. 
 
 meandatatest <- meandata
 
-#print('1')
+
 
 colnames(meandatatest) <- sub("tBodyAcc","acclmtr_time_domain_body_signal_",names(meandatatest))
 colnames(meandatatest) <- sub("tGravityAcc","acclmtr_time_domain_gravity_signal_",names(meandatatest))
