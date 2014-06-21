@@ -24,16 +24,16 @@ This Repository contains the files related to the Coursera's Project of Coursera
 
 * From the raw data files following steps have to be performed 
 
-* 1.) Merges the training and the test sets to create one data set.
-* 2.) Extracts only the measurements on the mean and standard deviation for each measurement. 
-* 3.) Uses descriptive activity names to name the activities in the data set
-* 4.) Appropriately labels the data set with descriptive variable names. 
-* 5.) Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1.) Merges the training and the test sets to create one data set.
+2.) Extracts only the measurements on the mean and standard deviation for each measurement. 
+3.) Uses descriptive activity names to name the activities in the data set
+4.) Appropriately labels the data set with descriptive variable names. 
+5.) Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
 ## Summary of the steps Performed
 * Downloaded the data files to the R working directory
-* created  "run_analysis.R"  which reads the data files and creates a Tidy data set , steps perfoemed in the script are detailed below in section
+* created  "run_analysis.R"  which reads the data files and creates a Tidy data set , steps perfoemed in the script are     detailed below in section
 * Finally Createed the Tidy data set and Code Book for the Project, For Code check Cobebook.MD file
 
 ## Raw Data Files Download
@@ -44,8 +44,8 @@ This Repository contains the files related to the Coursera's Project of Coursera
 
 * "run_analysis.R" is used to create the final dataset which is upladed to the Repository
 * Anyone can use this script to obtain the Tidy data set, following are the steps that has to be perfoemed in order to use   the script.
-* 1.) Source "run_analysis.R" function 
-* 2.) "run_analysis.R"  accepts directory name as the parameter, after sourcing "run_analysis.R" file into R, pass              the directory name to which files where downloaded in the above step
+**  1.) Source "run_analysis.R" function 
+** 2.) "run_analysis.R"  accepts directory name as the parameter, after sourcing "run_analysis.R" file into R, pass              the directory name to which files where downloaded in the above step
 *     For Ex: run_anlysis("C:/Users/madinam/Documents/Coursera/R-Datafiles")
 * 
 
