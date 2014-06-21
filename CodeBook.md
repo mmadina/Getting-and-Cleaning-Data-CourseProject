@@ -1,9 +1,11 @@
 ## Code Book for the Tidy Data set
 
 * Raw Data has been modifed using the "run_analysis.R" script and Tidy data has been genreated
-* Variable Names in the Raw data set has been modifed to descriptive variable names ,as per the project requirement there * only the columns with mean and standard deviation has been considered and total of 68 variables have been identifed
-* below table gives the transaltion of variables from raw data set to the tidy data set.
-* In the tidy data file Mean has been rounded to 5 decimal places.
+* Variable Names in the Raw data set has been modifed to descriptive variable names ,as per the project requirement 
+only the columns with mean and standard deviation has been considered and total of 68 variables have been identifed.
+* Variable names from the raw dataset has been modified to give more descriptive meaning and below table gives the translation between the variable names in Raw data set and tidy dataset
+* Mean of the Variables has been calcuated from the raw dataset for the identified 66 columns
+* In the tidy data set Mean has been rounded to 5 decimal places.
 * There are 68 variables and 180 observations in the final tidy data set
 
 
