@@ -127,6 +127,6 @@ avgvariabledata <- dcast(datamelt, Subject_Id+Activity_Id ~ variable , function(
 
 write.table(avgvariabledata, file = "TidyData.csv", sep = "|",eol = "\n", na = "NA", dec = ".", row.names = TRUE,col.names = TRUE)
 
-print(nrow(avgvariabledata))
+print(head(avgvariabledata))
 
 }
