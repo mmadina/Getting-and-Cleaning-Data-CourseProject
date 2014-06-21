@@ -4,7 +4,7 @@
 * Variable Names in the Raw data set has been modifed to descriptive variable names ,as per the project requirement there * only the columns with mean and standard deviation has been considered and total of 68 variables have been identifed
 * below table gives the transaltion of variables from raw data set to the tidy data set.
 * In the tidy data file Mean has been rounded to 5 decimal places.
-* There are 68 variables and 180 observations
+* There are 68 variables and 180 observations in the final tidy data set
 
 
 |	Raw Data Set Variable Names	|	Tidy Dat Set Variable Names	|
