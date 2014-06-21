@@ -58,6 +58,11 @@ This Repository contains the files related to the Coursera's Project of Coursera
 * Finally tidy data set with the average of each variable for each activity and each subject is created
 * Pipe delimited file with the name "TidyData.csv" will be created in the directory which was passed to the function 
 
+##Conclusion
+* 
+* This script can be run by peer reviwer by downloading and sourcing it in R and using the above steps mentioned 
+* If you sucessfully execute the script there will be CSV file created as well there will 6 records which will be displayed on the Prompt, the Variable names are very descriptive and gives understanding. 
+
 
 
 
