@@ -3,10 +3,10 @@
 
 Raw Data Set Variable Names  | Tidy Dat Set Variable Names
 ----------------------------   ---------------------------   
-From "subject_xxxx" file     | Subject_Id
-From "activity_labels" file  |
-tBodyAcc-mean()-X
-tBodyAcc-mean()-Y
+* From "subject_xxxx" file     | Subject_Id
+* From "activity_labels" file  |
+* tBodyAcc-mean()-X
+* tBodyAcc-mean()-Y
 tBodyAcc-mean()-Z
 tBodyAcc-std()-X
 tBodyAcc-std()-Y
